@@ -1,16 +1,27 @@
-# React + Vite
+# 🎨 Frontend - React Authentication App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the frontend client for the Full-Stack Authentication App. It is built using React and utilizes the Context API for seamless global state management, allowing users to log in, persist their sessions, and securely log out.
 
-Currently, two official plugins are available:
+## ✨ Key Features
+* **Global Auth State:** Uses React Context (`AuthContext`) to manage user sessions across all components without prop-drilling.
+* **Persistent Login:** Reads and writes JSON Web Tokens (JWT) to `localStorage` to keep users logged in after page refreshes.
+* **Protected Routing:** Dynamically renders UI elements (like the Logout button or user greetings) based on authentication status.
+* **Modern UI/UX:** Fully styled using Tailwind CSS for a responsive, sleek, and polished interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+* **Framework:** React.js (Vite / Create React App)
+* **Routing:** React Router DOM
+* **State Management:** React Context API
+* **HTTP Client:** Axios
+* **Styling:** Tailwind CSS
 
-## React Compiler
+## 🚀 Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
+Make sure you have Node.js installed on your machine.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/your-username/your-frontend-repo.git](https://github.com/your-username/your-frontend-repo.git)
+   cd your-frontend-repo
