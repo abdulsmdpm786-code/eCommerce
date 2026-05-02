@@ -15,13 +15,4 @@ This repository contains the frontend client for the Full-Stack Authentication A
 * **HTTP Client:** Axios
 * **Styling:** Tailwind CSS
 
-## 🚀 Getting Started
 
-### Prerequisites
-Make sure you have Node.js installed on your machine.
-
-### Installation & Setup
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/your-username/your-frontend-repo.git](https://github.com/your-username/your-frontend-repo.git)
-   cd your-frontend-repo
