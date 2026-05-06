@@ -4,7 +4,6 @@ import Axios_Api from "../Api/api";
 
 const Home = () => {
   const [user, setUser] = useState({});
-  // const [isData, setIsData] = useState(false);
 
   const token = localStorage.getItem("token");
   console.log(token);

@@ -10,6 +10,7 @@ import Signup from "./pages/Signup";
 import Protect from "./ProductRouter/tokenRouter";
 import Products from "./pages/product";
 import { AuthProvider } from "./Auth/AuthContext";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -33,14 +34,18 @@ const router = createBrowserRouter([
         path: "/signup",
         element: <Signup />,
       },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
     ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <AuthProvider>
       <RouterProvider router={router} />
-    </AuthProvider>
-  </React.StrictMode>,
+    </AuthProvider>,
+  {/* </React.StrictMode>, */}
 );
