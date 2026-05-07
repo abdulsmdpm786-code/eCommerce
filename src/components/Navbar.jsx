@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isLog, setIsLog] = useState(true);
 
   const token = localStorage.getItem("token");
-  const { isToken, setIsToken } = useContext(AuthContext);
+  const { isToken, setIsToken, isAdmin } = useContext(AuthContext);
 
   console.log("got the token", token);
 
@@ -65,6 +65,15 @@ const Navbar = () => {
               Contact
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
             </Link>
+            {isAdmin && (
+              <Link
+                to="/users"
+                className="text-sm font-medium text-slate-200 hover:text-white transition-colors relative group py-2"
+              >
+                Users
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            )}
           </div>
 
           {/* Action Buttons */}
@@ -165,6 +174,15 @@ const Navbar = () => {
           >
             Contact
           </Link>
+          {isAdmin && (
+            <Link
+              to="/users"
+              onClick={() => setIsOpen(false)}
+              className="text-base font-medium text-slate-200 hover:text-white hover:bg-white/10 px-3 py-2 rounded-lg transition-all duration-200 hover:pl-5"
+            >
+              Users
+            </Link>
+          )}
 
           <div className="h-px bg-white/20 my-2"></div>
 

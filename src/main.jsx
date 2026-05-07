@@ -11,6 +11,7 @@ import Protect from "./ProductRouter/tokenRouter";
 import Products from "./pages/product";
 import { AuthProvider } from "./Auth/AuthContext";
 import Contact from "./pages/Contact";
+import Users from "./pages/Users";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,14 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/users",
+        element: (
+          <Protect>
+            <Users />
+          </Protect>
+        ),
       },
     ],
   },
