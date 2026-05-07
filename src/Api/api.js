@@ -2,7 +2,7 @@ import axios from "axios"
 
 const Axios_Api = axios.create(
     {
-        baseURL: "http://localhost:4000"
+        baseURL: "https://ecommerce-backend-xcfh.onrender.com"
     }
 )
 
